@@ -1,0 +1,19 @@
+#one-selection{
+    height: 1294px;/*TODO delete*/
+    background-image: url(../imajes/bg.jpg);/*Картинка на фон*/
+    background-repeat: no-repeat;/*фоновый повтор: без повтора*/
+    background-size: cover;/*размер фона: покрытие*/
+    /*padding: 0 370px;/*Устанавливает значение полей вокруг содержимого элемента*/
+}
+.heder{
+    display: flex;
+}
+/* наследование */
+header>div>h4{
+    font-family: 'Montserrat';/*Шрифт*/
+    font-style: normal;/*Стиль написания*/
+    font-weight: 500;/*Толщина шрифта*/
+    font-size: 21px;/*Длинна шрифта*/
+    line-height: 143%;/*По типу межстрочного интервала (высота шрифта 100%) + (верхний интервал 21,5% от высоты шрифта) + (нижнтй интервал 21,5% от высоты шрифта)*/
+    color: #FFFFFF;/*Цвет текста*/
+}
