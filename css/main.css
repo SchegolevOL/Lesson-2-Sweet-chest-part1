@@ -1,19 +1,103 @@
-#one-selection{
-    height: 1294px;/*TODO delete*/
-    background-image: url(../imajes/bg.jpg);/*Картинка на фон*/
-    background-repeat: no-repeat;/*фоновый повтор: без повтора*/
-    background-size: cover;/*размер фона: покрытие*/
-    /*padding: 0 370px;/*Устанавливает значение полей вокруг содержимого элемента*/
+#one-selection {
+    height: 1294px;
+    /*TODO delete*/
+    background-image: url(../imajes/bg.jpg);
+    /*Картинка на фон*/
+    background-repeat: no-repeat;
+    /*фоновый повтор: без повтора*/
+    background-size: cover;
+    /*размер фона: покрытие*/
+    padding: 0 370px;
+    /*Устанавливает значение полей вокруг содержимого элемента*/
 }
-.heder{
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* https://tpverstak.ru/flex-cheatsheet */
+}
+
+header>div>div {
+    color: #FFFFFF;
+}
+
+/* наследование */
+header>div>h4 {
+    font-family: 'Montserrat';
+    /*Шрифт*/
+    font-style: normal;
+    /*Стиль написания*/
+    font-weight: 500;
+    /*Толщина шрифта*/
+    font-size: 21px;
+    /*Длинна шрифта*/
+    line-height: 143%;
+    /*По типу межстрочного интервала (высота шрифта 100%) + (верхний интервал 21,5% от высоты шрифта) + (нижнтй интервал 21,5% от высоты шрифта)*/
+    color: #FFFFFF;
+    /*Цвет текста*/
+    padding-top: 47px;
+    /*Верхний отступ*/
+}
+
+#adress {
+    padding-top: 46px;
+    width: 122px;
+    height: 36px;
+
+    /* Текст / 12, Regular */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+    /* Белый */
+    color: #FFFFFF;
+    margin-right: 80px;
+}
+
+#contact {
+    padding-top: 37px;
+}
+
+#heder-right {
     display: flex;
 }
-/* наследование */
-header>div>h4{
-    font-family: 'Montserrat';/*Шрифт*/
-    font-style: normal;/*Стиль написания*/
-    font-weight: 500;/*Толщина шрифта*/
-    font-size: 21px;/*Длинна шрифта*/
-    line-height: 143%;/*По типу межстрочного интервала (высота шрифта 100%) + (верхний интервал 21,5% от высоты шрифта) + (нижнтй интервал 21,5% от высоты шрифта)*/
-    color: #FFFFFF;/*Цвет текста*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 152%;
+    /* identical to box height, or 30px */
+
+    display: flex;
+    align-items: center;
+
+    /* Белый */
+
+    color: #FFFFFF;
+}
+
+.work-time {
+    width: 179px;
+    height: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    /* identical to box height, or 20px */
+    display: flex;
+    align-items: center;
+    /* Белый */
+    color: #FFFFFF;
 }
